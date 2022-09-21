@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Multimedia HTML 5 </title>
+	</head>
+	<body>
+		<h2> Belajar Multimedia - HTML 5 </h2>
+		<p>
+		<button onclick="playVid()" type="button">Play Video</button>
+		<button onclick="pauseVid()" type="button">Pause Video</button>
+		<button onclick="durationVid()" type="button">Duration Video</button>
+		<button onclick="makeSmall()" type="button">Small</button>
+		<button onclick="makeNormal()" type="button">Normal</button>
+		<button onclick="makeBig()" type="button">Big</button>
+		<button onclick="enableControls()" type="button">Enable Controls</button>
+		<button onclick="disableControls()" type="button">Disable Controls</button>
+		<button onclick="checkControls()" type="button">Check Controls</button>
+		</p>
+		<video width="420" id="myVideo">
+			<source src="media/mov.mp4" type="video/mp4">
+			browser not support...
+		</video>
+	</body>
+	<script>
+	var vid = document.getElementById("myVideo")
+	
+	function playVid() {
+		vid.play();
+		vid.loop = true;
+	}
+	function enableControls() {
+		vid.controls=true;
+		vid.load();
+	}
+	function disableControls() {
+		vid.controls = false;
+		vid.load();
+	}
+	function checkControls() {
+		alert(vid.controls)
+	}
+	function pauseVid() {
+		vid.pause();
+	}
+	function makeBig() {
+		myVideo.width = 600;
+	}
+	function makeSmall() {
+		myVideo.width = 200;
+	}
+	function makeNormal() {
+		myVideo.width = 420;
+	}
+	function durationVid() {
+		alert(vid.duration);
+	}
+	</script>
+</html>
