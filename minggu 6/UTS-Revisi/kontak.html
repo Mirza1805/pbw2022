@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>AUTOwheels-Kotak Saran</title>
+    <link rel="shortcut icon" sizes="70x70" href="b.jpg.png" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            background-color: rgb(124, 25, 25);
+            padding: 20px;
+            text-align: center;
+            font-size: 35px;
+            color: rgb(218, 211, 211);
+        }
+
+        nav {
+            float: left;
+            width: 10%;
+            background: #fff;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 30px;
+            width: 90%;
+            background-color: #f1f1f1;
+        }
+
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>AUTOwheels</h2>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li>
+                    <a href="UTS.html">Home</a>
+                </li>
+                <li>
+                    <a href="kona.html">Kona EV</a>
+                </li>
+                <li>
+                    <a href="ioniq.html">Ioniq 5 EV</a>
+                </li>
+                <li>
+                    <a href="wuling.html">Wuling Air EV</a>
+                </li>
+                <li>
+                    <a href="tentang.html">Biodata </a>
+                </li>
+                <li>
+                    <a href="kontak.html">Kotak Saran</a>
+                </li>
+                <li>
+                    <a href="survey.html">Survey</a>
+                </li>
+                <li>
+                    <a href="santai.html">Ruang Santai</a>
+                </li>
+                <li>
+                    <a href="cv.pdf" target="_blank">Download CV</a>
+                </li>
+            </ul>
+        </nav>
+        <article>
+            <h1>Kontak Saya </h1>
+            <form>
+                <label for="email">Email</label>
+                <br />
+                <input type="email" name="email" placeholder="alamat
+email" />
+                <br />
+                <label for="message">Pesan</label>
+                <br />
+                <textarea name="message" placeholder="Tulis pesan anda..." rows="4" cols="80"></textarea>
+                <br />
+                <br />
+                <input type="submit" value="Kirim" />
+            </form>
+        </article>
+    </section>
+    <footer style="text-align: center;">
+        <p>Copyright &copy; 2020 AUTOwheels</p>
+    </footer>
+</body>
+
+</html>

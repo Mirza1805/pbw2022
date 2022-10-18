@@ -1,0 +1,16 @@
+table{
+    border-style: groove;
+}
+.button{
+    text-decoration: none;
+}
+.akhir{
+    margin-top: 15%;
+}
+.masuk{
+    border-style: none;
+    margin-top: 7%;
+}
+.login{
+    border-style: none;
+}
