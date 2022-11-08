@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>AUTOwheels</title>
+    <link rel="shortcut icon" sizes="70x70" href="b.jpg.png" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            background-color: rgb(124, 25, 25);
+            padding: 20px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        nav {
+            float: left;
+            width: 10%;
+            background: #fff;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 30px;
+            width: 90%;
+            background-color: #f1f1f1;
+        }
+
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>AUTOwheels</h2>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href="UTS.html">Home</a></li>
+                <li><a href="kona.html">Kona EV</a></li>
+                <li><a href="ioniq.html">Ioniq 5 EV</a></li>
+                <li><a href="wuling.html">Wuling Air EV</a></li>
+                <li><a href="tentang.html">Biodata </a></li>
+                <li><a href="kontak.html">Kotak Saran</a></li>
+                <li><a href="survey.html">Survey</a></li>
+                <li><a href="santai.html">Ruang Santai</a></li>
+                <li><a href="cv.pdf" target="_blank">Download CV</a> </li>
+            </ul>
+        </nav>
+        <article>
+            <h1>Survey Kepuasan </h1>
+            <form>
+                <label>
+                    Nama :<br />
+                    <input type="text" name="fNama" placeholder="Nama Lengkap" required>
+                </label>
+                <br />
+
+                <label>
+                    Tanggal Lahir :<br /> 
+                    <input type="date" name="fTanggal Lahir" required>
+                </label>
+                <br />
+
+                <label>
+                    Email : <br /> 
+                <input type="text" name="femail" placeholder="alamat email" required>
+                </label>
+                <br />
+
+                <label>
+                    Jenis Kelamin :<br />
+                    <select name="fjenis kelamin" required>
+                        <option value="a11">Boy</option>
+                        <option value="a12">Woman</option>
+                    </select>
+                </label>
+                <br />
+
+                Kepuasan Informasi yang diberikan : <br />
+                <label>
+                    <select name="fkepuasan">
+                        <option value="a21">Puas</option>
+                        <option value="a22">Tidak Puas</option>
+                    </select>
+                </label>
+                <br />
+
+                Keingin untuk membeli : <br />
+                <label>
+                    <input type="checkbox" name="f1" value="a31"> Kona EV
+                    <input type="checkbox" name="f2" value="a32"> Ioniq 5 EV
+                    <input type="checkbox" name="f3" value="a33"> Wuling Air EV
+                </label>
+                <br />
+                <br />
+                <br />
+                <input type="submit" name="fsubmit">
+            </form>
+        </article>
+    </section>
+    <footer style="text-align: center;">
+        <p>Copyright &copy; 2020 AUTOwheels</p>
+    </footer>
+</body>
+
+</html>

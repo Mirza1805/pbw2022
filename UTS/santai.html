@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>AUTOwheels</title>
+    <link rel="shortcut icon" sizes="70x70" href="b.jpg.png" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            background-color: rgb(124, 25, 25);
+            padding: 20px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        nav {
+            float: left;
+            width: 10%;
+            background: #fff;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 30px;
+            width: 90%;
+            background-color: #f1f1f1;
+        }
+
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>AUTOwheels</h2>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href="UTS.html">Home</a></li>
+                <li><a href="kona.html">Kona EV</a></li>
+                <li><a href="ioniq.html">Ioniq 5 EV</a></li>
+                <li><a href="wuling.html">Wuling Air EV</a></li>
+                <li><a href="tentang.html">Biodata </a></li>
+                <li><a href="kontak.html">Kotak Saran</a></li>
+                <li><a href="survey.html">Survey</a></li>
+                <li><a href="santai.html">Ruang Santai</a></li>
+                <li><a href="cv.pdf" target="_blank">Download CV</a> </li>
+            </ul>
+        </nav>
+
+        <center>
+            <article>
+                <h1>Nyantai dulu ^-^</h1>
+                <video width="420" id="myVideo">
+                    <source src="lofi.mp4.mp4" type="video/mp4">
+                    browser not support...
+                </video>
+                <br />
+                <p>
+                    <button onclick="playVid()" type="button">Play Video</button>
+                    <button onclick="pauseVid()" type="button">Pause Video</button>
+                    <button onclick="durationVid()" type="button">Duration Video</button>
+                    <button onclick="makeSmall()" type="button">Small</button>
+                    <button onclick="makeNormal()" type="button">Normal</button>
+                    <button onclick="makeBig()" type="button">Big</button>
+                    <button onclick="enableControls()" type="button">Enable Controls</button>
+                    <button onclick="disableControls()" type="button">Disable Controls</button>
+                    <button onclick="checkControls()" type="button">Check Controls</button>
+                </p>
+                <br />
+                <p>Loafy Building - Shelter lofi</p>
+                <audio controls>
+
+                    <source src="lofi 2.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <p> Kinissue - Sea Beams lofi</p>
+                <audio controls>
+
+                    <source src="lofi 3.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <p>Outlander - Massa lofi</p>
+                <audio controls>
+
+                    <source src="lofi 4.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                </article>
+                </center>
+                </section>
+
+</body>
+<script>
+    var vid = document.getElementById("myVideo")
+
+    function playVid() {
+        vid.play();
+        vid.loop = true;
+    }
+    function enableControls() {
+        vid.controls = true;
+        vid.load();
+    }
+    function disableControls() {
+        vid.controls = false;
+        vid.load();
+    }
+    function checkControls() {
+        alert(vid.controls)
+    }
+    function pauseVid() {
+        vid.pause();
+    }
+    function makeBig() {
+        myVideo.width = 700;
+    }
+    function makeSmall() {
+        myVideo.width = 200;
+    }
+    function makeNormal() {
+        myVideo.width = 420;
+    }
+    function durationVid() {
+        alert(vid.duration);
+    }
+</script>
+
+<footer>
+    <p>Copyright &copy; 2022 AUTOwheels</p>
+</footer>
+</body>
+
+</html>
